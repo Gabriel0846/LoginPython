@@ -33,7 +33,7 @@
             Label:
                 size_hint: 0.5, 0.12
                 pos_hint: {"x": 0, "top": 0.8-0.13}
-                text"Email:"
+                text: "Email:"
                 font_size: (root.width**2 + root.height**2)/14**4
 
             TextInput:
@@ -41,11 +41,11 @@
                 size_hint:0.4, 0.12
                 id: email
                 multiline: False
-                font_size; (root.width**2 + root.height**2)/14**4
+                font_size: (root.width**2 + root.height**2)/14**4
 
             Label:
                 size_hint: 0.5,0.12
-                pos_hint: {"x":0, "top"0.8-0.13*2}
+                pos_hint: {"x":0, "top":0.8-0.13*2}
                 text: "Password: "
                 font_size: (root.width**2 + root.height**2) / 14**4
 
@@ -63,8 +63,8 @@
             font_size: (root.width**2 + root.height**2) / 17**4
             text: "Already have an Account? Log In"
             on_release:
-            root.manager.transition.direction = "left"
-            root.login()
+                root.manager.transition.direction = "left"
+                root.login()
 
         Button:
             pos_hint:{"x":0.2,"y":0.05}
@@ -72,8 +72,8 @@
             text: "Submit"
             font_size: (root.width**2 + root.height**2) / 14**4
             on_release:
-            root.manager.transition.direction = "left"
-            root.submit()
+                root.manager.transition.direction = "left"
+                root.submit()
 
 <LoginWindow>:
     name: "login"
